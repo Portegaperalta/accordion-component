@@ -61,6 +61,7 @@ body {
 }
 
 .question-title h2 {
+  cursor: pointer;
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--text-clr);
@@ -80,6 +81,7 @@ body {
 }
 
 .question-bottom p {
+  display: none;
   width: 100%;
   max-width: 680px;
   margin-top: 0px;

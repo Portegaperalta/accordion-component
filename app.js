@@ -6,8 +6,15 @@ const answers = {
   answer5: "No, it is not practical for you to use them, you should use pure hardcode code.",
 }
 
-const questions = document.querySelectorAll('.question')
-const answerBox = document.querySelectorAll('.question-bottom p')
+const questionsTitle = document.querySelectorAll('.question-title h2')
+const questionsAnswer = document.querySelectorAll('.question-bottom p')
 const moreBtns = document.querySelectorAll('#moreBtn')
 const lessBtns = document.querySelectorAll('#lessBtn')
 
+questionsTitle.forEach((title, index) => {
+  title.addEventListener('click', () => {
+    title
+
+    questionsAnswer[index].style.display = 'block'
+  })
+})
